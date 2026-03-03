@@ -34,16 +34,3 @@ O *framework* traduz dados observacionais e conceitos de transferência radiativ
 
 **Como explorar os parâmetros:**
 Ao abrir os arquivos `.blend`, navegue até o editor de materiais (*Shader Editor*). Os principais parâmetros físicos ($H_0$, diâmetro $d$ para aerossóis) estão mapeados em nós de valor agrupados para fácil manipulação, permitindo a visualização em tempo real das alterações na composição química e estelar. A Temperatura Efetiva pode ser modificada no material do objeto *Sun*. Os parâmetros para o modelo com observador na superfície podem ser alterados na aba *World* do *Shader Editor*.
-
-## 📝 Como Citar
-
-Se este laboratório virtual for útil para suas pesquisas ou aulas, por favor, cite o artigo original:
-
-```bibtex
-@article{martins2026blender,
-  title={Blender como Laboratório Virtual para a Criação de Visualizações do Espalhamento em Atmosferas Planetárias},
-  author={Martins, Raylan A. P. and Emilio, Marcelo},
-  journal={Revista Brasileira de Ensino de Física},
-  year={2026},
-  note={Submetido}
-}
