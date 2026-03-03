@@ -7,7 +7,7 @@ Este repositório contém os modelos 3D, materiais procedurais e configurações
 
 O projeto apresenta um *framework* computacional de código aberto que funciona como um laboratório virtual acessível. Ele permite que estudantes, educadores e pesquisadores explorem quantitativamente os efeitos de parâmetros físicos sobre fenômenos ópticos atmosféricos em exoplanetas, utilizando o motor de renderização Cycles do Blender.
 
-![Planetas sob estrelas de tipos distintos]((/render/DiffTemp.png))
+![Planetas sob estrelas de tipos distintos](/render/DiffTemp.png)
 *Simulação da aparência de um planeta rochoso sob a luz de estrelas hospedeiras de tipos distintos (Temperaturas Efetivas distintas).*
 
 ## 🔭 Recursos e Implementações Físicas
