@@ -22,14 +22,28 @@ O *framework* traduz dados observacionais e conceitos de transferência radiativ
 ## 📁 Estrutura do Repositório
 
 * `/modelos`: Contém os arquivos `.blend` principais.
+    * `/Observador_Externo`: Contém os arquivos `.blend` para os modelos do observador externo e planetas rochosos com atmosferas volumétricas.
+    * `/Observador_na_Superficie`: Contém os arquivos `.blend` para os modelos do observador na superfície.
 * `/renders`: Imagens de alta resolução e renderizações dos experimentos detalhados no artigo.
 
 ## ⚙️ Pré-requisitos e Uso
 
 1.  **Software:** [Blender 4.0](https://www.blender.org/download/) ou superior.
 2.  **Motor de Renderização:** Cycles (Obrigatório para o cálculo de *Path Tracing* volumétrico).
-3.  **Addons Opcionais:** Para a execução estrita dos cenários de superfície, foi utilizada a extensão *Physical Starlight and Atmosphere (PSA)*. Os modelos volumétricos com observador externo não dependem de nenhum addon adicional.
+3.  **Addons Opcionais:** Para a execução estrita dos cenários de superfície, foram utilizadas a extensões *Physical Starlight and Atmosphere (PSA)* e *Physical Open Waters (POW)*. Os modelos volumétricos com observador externo não dependem de nenhum addon adicional. Uma versão simplificada feita utilizando somente ferramentas nativas do Blender para o modelo superficial pode ser acessada no arquivo `/modelos/Observador_na_Superficie/Superficie-Oceanica-Nativa.blend`.
 
 **Como explorar os parâmetros:**
-Ao abrir os arquivos `.blend`, navegue até o editor de materiais (*Shader Editor*). Os principais parâmetros físicos ($H_0$, diametro $d$ para aerossóis) estão mapeados em nós de valor agrupados para fácil manipulação, permitindo a visualização em tempo real das alterações na composição química e estelar. A Temperatura Efetiva pode ser modificada no material do objeto Sun.
+Ao abrir os arquivos `.blend`, navegue até o editor de materiais (*Shader Editor*). Os principais parâmetros físicos ($H_0$, diâmetro $d$ para aerossóis) estão mapeados em nós de valor agrupados para fácil manipulação, permitindo a visualização em tempo real das alterações na composição química e estelar. A Temperatura Efetiva pode ser modificada no material do objeto *Sun*. Os parâmetros para o modelo com observador na superfície podem ser alterados na aba *World* do *Shader Editor*.
 
+## 📝 Como Citar
+
+Se este laboratório virtual for útil para suas pesquisas ou aulas, por favor, cite o artigo original:
+
+```bibtex
+@article{martins2026blender,
+  title={Blender como Laboratório Virtual para a Criação de Visualizações do Espalhamento em Atmosferas Planetárias},
+  author={Martins, Raylan A. P. and Emilio, Marcelo},
+  journal={Revista Brasileira de Ensino de Física},
+  year={2026},
+  note={Submetido}
+}
