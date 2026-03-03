@@ -7,7 +7,7 @@ Este repositório contém os modelos 3D, materiais procedurais e configurações
 
 O projeto apresenta um *framework* computacional de código aberto que funciona como um laboratório virtual acessível. Ele permite que estudantes, educadores e pesquisadores explorem quantitativamente os efeitos de parâmetros físicos sobre fenômenos ópticos atmosféricos em exoplanetas, utilizando o motor de renderização Cycles do Blender.
 
-![Comparação de Pôres do Sol]([Link_para_a_imagem_dos_pores_do_sol_Marte_Terra_Venus_na_pasta_showcase])
+![Comparação de Pôres do Sol]([[Link_para_a_imagem_dos_pores_do_sol_Marte_Terra_Venus_na_pasta_showcase]](https://github.com/RaylanPrestes/BlenderEspalhamentoAtmosferico/blob/main/render/DiffTemp.png))
 *Simulação do pôr do sol sob três condições atmosféricas distintas: Marte (espalhamento Mie frontal), Terra (espalhamento Rayleigh) e Vênus (luz altamente difusa).*
 
 ## 🔭 Recursos e Implementações Físicas
@@ -21,15 +21,15 @@ O *framework* traduz dados observacionais e conceitos de transferência radiativ
 
 ## 📁 Estrutura do Repositório
 
-* `/models`: Contém os arquivos `.blend` principais.
+* `/modelos`: Contém os arquivos `.blend` principais.
 * `/renders`: Imagens de alta resolução e renderizações dos experimentos detalhados no artigo.
 
 ## ⚙️ Pré-requisitos e Uso
 
 1.  **Software:** [Blender 4.0](https://www.blender.org/download/) ou superior.
 2.  **Motor de Renderização:** Cycles (Obrigatório para o cálculo de *Path Tracing* volumétrico).
-3.  **Addons Opcionais:** Para a execução estrita dos cenários de superfície, foi utilizada a extensão *Physical Starlight and Atmosphere (PSA)*.
+3.  **Addons Opcionais:** Para a execução estrita dos cenários de superfície, foi utilizada a extensão *Physical Starlight and Atmosphere (PSA)*. Os modelos volumétricos com observador externo não dependem de nenhum addon adicional.
 
 **Como explorar os parâmetros:**
-Ao abrir os arquivos `.blend`, navegue até o editor de materiais (*Shader Editor*). Os principais parâmetros físicos (Temperatura da Estrela, $H_0$, Fator de Assimetria $g$ para aerossóis) estão mapeados em nós de valor agrupados para fácil manipulação, permitindo a visualização em tempo real das alterações na composição química e estelar.
+Ao abrir os arquivos `.blend`, navegue até o editor de materiais (*Shader Editor*). Os principais parâmetros físicos ($H_0$, diametro $d$ para aerossóis) estão mapeados em nós de valor agrupados para fácil manipulação, permitindo a visualização em tempo real das alterações na composição química e estelar. A Temperatura Efetiva pode ser modificada no material do objeto Sun.
 
